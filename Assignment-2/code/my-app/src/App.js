@@ -1,18 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {employee} from "./object.js"
 
 
-
-function App(props) {
- const {employee}=props;
+function App() {
+  return (
+    <div>
+    <img  class="datacell1"src={employee.profileImg} alt="Images"/>
+    <h1 class="datacell">name:{employee.name}</h1>
+    <h1 class="datacell">location:{employee.location}</h1>
+    <h1 class="datacell">bloodGroup:{employee.bloodGroup}</h1>
+    <h1 class="datacell">age:{employee.age}</h1>
     
-return(
-  <div className="container">
-  {/* Start your React code here */}
+
+    
 </div>
 )
-}
-
-
-
+  }
 export default App;
